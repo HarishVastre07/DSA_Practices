@@ -1,35 +1,37 @@
 #include<iostream>
-#include<string>
+#include<vector>
 using namespace std;
 
+vector<vector<int>> countFrequencies(vector<int>& nums)
+     {
+        int maxNum =0;
+    for(int num : nums) 
+    {
+        maxNum = max(maxNum, num);
+    }
+        vector<int> freq(maxNum + 1, 0);
+
+        for(int i=0; i<nums.size(); i++)
+        {
+            freq[nums[i]] += 1;
+        }
+
+        for(int i = 1; i <= maxNum; i++) {
+        if(freq[i] > 0)
+         {
+            cout <<"[" << i << "," << freq[i] << "]" << endl;
+        }
+
+    }
+}
 int main()
 {
-    string s;
-    cout << "Enter string :" << endl;
-    cin >> s;
+    vector<int> nums = {5,5,5,5};
+    countFrequencies(nums);
     
-     
-    int hash[256] = {0};
+    cout << "\nPress Enter to exit..." << flush;
+    cin.ignore();
+    cin.get();
     
-    //pre-computing
-    for(int i = 0; i<s.size(); i++)
-    {
-        hash[s[i]] +=  1;
-    }
-
-
-    //fetching
-    int q;
-    cout << "Enter number of queries :"<< endl;
-    cin >> q;
-
-    while(q--)
-    {
-        char character;
-        cout << "Enter the character to search the frequency :" << endl;
-        cin >> character;
-        cout << "frequency of " << character << " is " << hash[character] << endl;
-    }
-
     return 0;
 }

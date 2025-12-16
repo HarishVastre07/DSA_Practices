@@ -29,3 +29,9 @@ int mostFrequentElement(vector<int>& nums)
 
     return result;
 }
+
+int main()
+{
+    vector<int> nums = {1,2,2,3,3,4,4};
+    cout << "Most Frequent Element: " << mostFrequentElement(nums);
+}

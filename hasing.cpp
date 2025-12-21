@@ -16,6 +16,7 @@ vector<vector<int>> countFrequencies(vector<int>& nums)
             freq[nums[i]] += 1;
         }
 
+        
         for(int i = 1; i <= maxNum; i++) {
         if(freq[i] > 0)
          {

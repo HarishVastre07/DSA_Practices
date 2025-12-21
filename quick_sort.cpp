@@ -44,7 +44,6 @@ int main()
     int high = arr.size()-1;
     QuickSort(arr,low,high);
 
-    cout << "Sorted Array : ";
     for(int i =0; i<arr.size(); i++)
     {
         cout << arr[i] << " ";

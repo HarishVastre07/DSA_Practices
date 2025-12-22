@@ -22,7 +22,6 @@ void bubble_sort(vector<int> &nums)
         if(!swapped)
         break;
 
-        cout << "Runs" << endl;
     }
 }
 

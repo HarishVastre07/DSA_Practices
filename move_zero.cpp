@@ -27,9 +27,9 @@ int main()
 {
     vector<int> arr = {0,1,0,3,12};
     move(arr);
-    for(int i=0; i<arr.size(); i++)
+    for(int num : arr)
     {
-        cout << arr[i] << " " ;
+        cout << num << " ";
     }
     return 0;
 

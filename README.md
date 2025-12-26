@@ -17,3 +17,11 @@ Started Step 3 : Solve problems on array - Easy>Med>Hard
 <br>
 Solved Largest Element In Array...
 <br>
+Date - 24/12/2025
+<br>
+Solved Easy array problems- left rotate array by one , rotate array by k positions on left/right, etc
+<br>
+Date - 26/12/2025
+<br>
+Solved Easy Array Problems like move zeros to last, Linear search,etc
+<br> 

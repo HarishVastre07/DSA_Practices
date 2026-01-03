@@ -3,9 +3,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int sortZeroOneTwo(vector<int> & nums)
-{
-    
+    int sortZeroOneTwo(vector<int> & nums)
+    {
         int low=0, mid=0, high=nums.size()-1;
 
         while(low<=high)
@@ -19,13 +18,14 @@ int sortZeroOneTwo(vector<int> & nums)
             {
                 mid++;
             }
-            else{
+            else
+            {
                 swap(nums[mid],  nums[low]);
                 low++;
                 mid++;
             }
         }
-}
+    }   
 
 int main()
 {
